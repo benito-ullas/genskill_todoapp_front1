@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block head %}
+        <title> Todo App </title>
+        <script  src="{{ url_for('static', filename='todo.js') }}" type="text/javascript"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'todo.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/87b41a4028.js" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block body %}
+        <div class="container">
+                <section class="header-section">
+                        <div class="header">
+                                <div class="date-day">
+                                        <p id="day">Thursday ,</p>
+                                        <p id="date">10 th</p>
+                                </div>
+                                <div class="task-no-cont">
+                                        <p class="task-no" id="task-no">12 Tasks</p>
+                                </div>
+                        </div>
+                        <p class="month" id="month">December</p>
+                </section >
+                <form id="add-task" class="add-todo-section">
+                        <input for = "add-button" type="text" placeholder="Add Todo" id="input-add-task" required>
+                        <button id = "add-button">&#43;</button>
+                </form>
+                <section>
+                        <ul class='todo-list'>
+                                
+                        </ul>
+                </section>
+        </div>
+{% endblock %}

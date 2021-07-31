@@ -1,0 +1,102 @@
+*{
+        margin: 0px;
+        padding: 0px;
+        
+        font-family: 'Poppins', sans-serif;
+}
+
+body{
+
+        background: linear-gradient(to right, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+}
+
+.header-container{
+        font-size: 2.5rem;
+        padding: 10px 0px 0px 0px;
+        background: linear-gradient(0deg, #D0D5FF 0%, #F6F6F6 40%);
+        border-radius: 10px 10px 0px 0px; 
+        text-align: center;
+
+}
+
+.wrap-container{
+        background: white;
+        border-radius: 10px;
+        width: 50%;
+        min-width: 400px;
+        max-width: 600px;
+        margin: auto;
+}
+
+.uname-cont, .psw-cont{
+        padding-top: 10px;
+        padding-bottom: 5px;
+        text-align: center;
+        
+}
+
+.uname-cont > label{
+        padding-right: 35px;
+}
+
+.psw-cont > label{
+        padding-right: 40px;
+}
+
+.button-cont{
+        text-align: center;
+        padding: 13px 0px 18px 0px;
+        
+}
+
+button{
+        background-color: #3f2b96;
+        border: none;
+        outline: none;
+        color: #f6f6f6;
+        cursor: pointer;
+        border-radius: 3px;
+        
+        padding: 4px 16px;
+}
+
+input{
+        border: 3px #D0D5FF;
+        border-radius: 10px;
+        box-shadow: 0px 4px 12px -2px #D0D5FF;
+        padding-left: 19px;
+        margin-right: 7px;
+        color: #797C86;
+        line-height: 2rem;
+        outline: none;
+}
+
+button:hover{
+        background-color: #5439c8;
+}
+
+button:active{
+        background-color: #3a2889;
+}   
+
+.btn-rst{
+        margin-right: 12px;
+}
+.btn-login{
+        margin-left: 12px;
+}
+.footer-cont{
+        text-align: center;
+        padding: 5px 0px 28px 0px;
+}
+.footer-cont > button{
+        margin-left: 10px;
+}
+.footer-cont > p{
+        font-size: 0.4rem;
+}

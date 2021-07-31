@@ -1,0 +1,152 @@
+*{
+        margin: 0px;
+        padding: 0px;
+        
+        font-family: 'Poppins', sans-serif;
+}
+
+body{
+
+        background: linear-gradient(to right, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+}
+
+section{
+        margin-bottom: 0px 0px;
+}
+
+.container{
+        background: white;
+        border-radius: 10px;
+        width: 75%;
+        min-width: 400px;
+        max-width: 600px;
+        margin: auto;
+        
+}
+.container > * {
+        margin: 0px 0px;
+}
+
+.header{
+        display: flex;
+        padding-top: 10px;
+        
+}
+
+.header-section{
+        background: linear-gradient(0deg, #D0D5FF 0%, #F6F6F6 40%);
+        border-radius: 10px 10px 0px 0px; 
+}
+
+
+.header > div {
+        display: flex;
+}
+
+.date-day{
+        width: 80%;
+        font-size: 2.5rem;
+        padding: 10px 0px 0px 25px;
+}
+.month{
+        padding: 0px 30px;
+        color: #808080;
+        padding-bottom: 40px;
+        margin-top: -10px;
+}
+
+.task-no-cont{
+        width: 20%;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 25px;
+}
+
+.task-no{
+        align-items: right;
+        text-align: right;
+        color: #808080;
+}
+
+.add-todo-section{
+        padding: 15px 30px;
+}
+
+.add-todo-section > input{
+        width: 85%;
+        border: 3px #D0D5FF;
+        border-radius: 10px;
+        box-shadow: 0px 4px 12px -2px #D0D5FF;
+        padding-left: 19px;
+        margin-right: 7px;
+        color: #797C86;
+        line-height: 2rem;
+        outline: none;
+}
+
+form > button{
+        content: "\002B";
+        font-size: 1.5rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 0px;
+        background-color: #3f2b96;
+        color: #f6f6f6;
+        cursor: pointer;
+}
+
+form > button:hover{
+        background-color: #5439c8;
+}
+
+form > button:active{
+        background-color: #3a2889;
+}     
+.list-item{
+        display : flex ;
+        height: 50px;
+        align-items: center;
+        padding-right: 50px;
+}
+
+ul{
+        list-style-type: None;
+}
+
+li{
+        width: 90%;
+        margin-right: 20px;
+}
+
+.st{
+        text-decoration: line-through;
+        color: #acacac;
+        
+}
+
+.far{
+        border: 0px;
+        cursor: pointer;
+        color: black;
+}
+
+.far:hover{
+        color: rgba(0,0,0,0.5);
+}
+.far:active{
+        color: rgba(0,0,0,0.8);       
+}
+
+.checkbox {
+        margin: 6px 30px 6px 25px;
+        border: 1px #acacac;
+        outline: #acacac;
+}
+
+

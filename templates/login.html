@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block head %}
+        <title> Login Page </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'login.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        
+{% endblock %}
+
+{% block body %}
+        <script  src="{{ url_for('static', filename='login.js') }}" type="text/javascript"></script>
+        
+        <div class="wrap-container">
+        <div class="header-container">
+        <p>Login<p>
+        </div>
+        <form id='login-form' class="form-container">
+                <div class="uname-cont">
+                        <label for="uname">Username</label>
+                        <input type="text" placeholder="Enter Username" id="uname" required>
+                </div>
+                
+                <div class="psw-cont">
+                        <label for="psw">Password</label>
+                        <input type="password" placeholder="Enter Password" id="psw" required>
+                </div>
+                
+                <div class="button-cont">
+                        <button id="button-reset" class="btn-rst">Reset</button>
+                        <button id="button-login"class="btn-login">Login</button>
+                </div>
+        </form>
+        <div class="footer-cont">
+        <span> New User, Sign Up here</span> <button onclick="document.location='/signup'">Sign Up</button>
+        </div>
+        </div>
+{% endblock %}
